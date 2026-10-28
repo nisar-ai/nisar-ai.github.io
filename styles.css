@@ -28,7 +28,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 105px;
+  scroll-padding-top: 110px;
 }
 
 body {
@@ -57,7 +57,7 @@ a:hover {
 }
 
 a:focus-visible,
-button:focus-visible,
+summary:focus-visible,
 [tabindex]:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 4px;
@@ -105,7 +105,7 @@ h4 {
   top: 12px;
 }
 
-/* ---------- NAVIGATION ---------- */
+/* Navigation */
 
 .site-header {
   position: sticky;
@@ -152,7 +152,7 @@ h4 {
   color: var(--accent);
 }
 
-/* ---------- HERO ---------- */
+/* Hero */
 
 .hero {
   padding: 52px 0 38px;
@@ -210,7 +210,6 @@ h1 {
 .role {
   max-width: 720px;
   margin-bottom: 18px;
-  color: var(--ink);
   font-size: clamp(17px, 2.5vw, 21px);
   line-height: 1.5;
 }
@@ -246,7 +245,7 @@ h1 {
   background: var(--panel);
 }
 
-.metric .k {
+.metric dt {
   margin-bottom: 5px;
   color: var(--ink-soft);
   font-family: var(--mono);
@@ -255,7 +254,7 @@ h1 {
   text-transform: uppercase;
 }
 
-.metric .v {
+.metric dd {
   color: var(--ink);
   font-family: var(--mono);
   font-size: 13px;
@@ -298,16 +297,16 @@ h1 {
 .links .primary-link {
   border-color: var(--accent);
   background: var(--accent);
-  color: #fff;
+  color: #ffffff;
 }
 
 .links .primary-link:hover {
   border-color: var(--accent-dark);
   background: var(--accent-dark);
-  color: #fff;
+  color: #ffffff;
 }
 
-/* ---------- SECTIONS ---------- */
+/* Sections */
 
 section {
   padding: 34px 0;
@@ -330,7 +329,7 @@ section + section {
   font-size: 12px;
 }
 
-.sec-title {
+.sec-head h2 {
   color: var(--ink);
   font-size: 15px;
   font-weight: 600;
@@ -345,7 +344,7 @@ section + section {
   font-size: 14px;
 }
 
-/* ---------- SHARED CARDS ---------- */
+/* Shared cards */
 
 .project-card,
 .info-card,
@@ -389,7 +388,14 @@ section + section {
   margin-top: 9px;
 }
 
-/* ---------- PROJECTS ---------- */
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+/* Projects */
 
 #projects > .project-card + .project-card {
   margin-top: 20px;
@@ -475,7 +481,7 @@ section + section {
   font-size: 10px;
 }
 
-/* ---------- EXPERIMENTAL RESULTS ---------- */
+/* Results */
 
 .result-panel {
   margin-top: 24px;
@@ -554,13 +560,12 @@ tbody td {
   background: var(--bg);
 }
 
-/* ---------- RESEARCH ---------- */
+/* Research */
 
 .research-card {
   padding: 26px;
   border-radius: var(--radius);
   background: var(--ink);
-  color: #e9f3ee;
 }
 
 .research-card p {
@@ -585,18 +590,11 @@ tbody td {
   font-size: 10px;
 }
 
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 16px;
-}
-
-.research-grid .detail-list {
+.two-column .detail-list {
   margin-top: 0;
 }
 
-/* ---------- EDUCATION ---------- */
+/* Education */
 
 .edu-top {
   display: flex;
@@ -606,12 +604,12 @@ tbody td {
   margin-bottom: 6px;
 }
 
-.edu-uni {
-  font-size: 17px;
+.edu-top h3 {
+  font-size: 16px;
   font-weight: 600;
 }
 
-.edu-date {
+.date {
   color: var(--ink-soft);
   font-family: var(--mono);
   font-size: 11px;
@@ -671,7 +669,7 @@ tbody td {
   margin-top: 6px;
 }
 
-/* ---------- SKILLS ---------- */
+/* Skills */
 
 .skill-grid {
   display: grid;
@@ -683,7 +681,7 @@ tbody td {
   padding: 20px;
 }
 
-.skill-card .cat {
+.skill-card h3 {
   margin-bottom: 13px;
   color: var(--ink-soft);
   font-family: var(--mono);
@@ -715,7 +713,7 @@ tbody td {
   color: var(--amber);
 }
 
-/* ---------- HONORS ---------- */
+/* Honors */
 
 .honor-list {
   list-style: none;
@@ -745,51 +743,76 @@ tbody td {
   font-weight: 600;
 }
 
-/* ---------- CERTIFICATIONS ---------- */
+/* Main certifications */
 
 .cert-card {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 18px;
   margin-bottom: 12px;
   padding: 18px 20px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--panel);
-}
-
-.cert-card:last-child {
-  margin-bottom: 0;
+  box-shadow: var(--shadow);
 }
 
 .cert-card.featured {
   border-left: 3px solid var(--accent);
 }
 
+.cert-thumb-link {
+  display: block;
+  flex: 0 0 120px;
+  width: 120px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: #ffffff;
+  line-height: 0;
+}
+
+.cert-img {
+  display: block;
+  width: 100%;
+  height: 85px;
+  padding: 4px;
+  object-fit: contain;
+  background: #ffffff;
+}
+
+.cert-thumb-link:hover {
+  border-color: var(--accent);
+}
+
 .cert-info {
-  flex: 1 1 240px;
+  flex: 1 1 220px;
   min-width: 0;
 }
 
 .cert-name {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  color: var(--ink);
   font-size: 14px;
   font-weight: 600;
+  line-height: 1.5;
 }
 
 .cert-meta {
   color: var(--ink-soft);
   font-family: var(--mono);
   font-size: 10px;
+  line-height: 1.8;
 }
 
 .cert-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 36px;
-  padding: 6px 11px;
+  flex-shrink: 0;
+  min-height: 38px;
+  padding: 7px 11px;
   border: 1px solid var(--accent);
   border-radius: 4px;
   color: var(--accent);
@@ -800,10 +823,70 @@ tbody td {
 
 .cert-badge:hover {
   background: var(--accent-soft);
+  color: var(--accent-dark);
   text-decoration: none;
 }
 
-/* ---------- CONTACT ---------- */
+/* Secondary certificates: lower visual prominence */
+
+.additional-certs {
+  margin-top: 20px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #f7f9f7;
+}
+
+.additional-certs summary {
+  padding: 15px 18px;
+  color: var(--ink-soft);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.additional-certs summary:hover {
+  color: var(--accent-dark);
+}
+
+.additional-certs[open] summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.additional-certs-body {
+  padding: 18px;
+}
+
+.secondary-note {
+  margin-bottom: 16px;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.cert-card.minor {
+  gap: 12px;
+  padding: 14px 16px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.cert-card.minor:last-child {
+  margin-bottom: 0;
+}
+
+.cert-card.minor .cert-name {
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.secondary-link {
+  color: var(--ink-soft);
+  font-family: var(--mono);
+  font-size: 10px;
+}
+
+/* Contact */
 
 .contact-card {
   display: grid;
@@ -827,7 +910,7 @@ tbody td {
   color: var(--ink-soft);
 }
 
-/* ---------- FOOTER ---------- */
+/* Footer */
 
 footer {
   padding-block: 32px 48px;
@@ -851,7 +934,7 @@ footer p {
   font-size: 12px;
 }
 
-/* ---------- TABLET ---------- */
+/* Tablet */
 
 @media (max-width: 800px) {
   .nav {
@@ -879,11 +962,11 @@ footer p {
   }
 }
 
-/* ---------- MOBILE ---------- */
+/* Mobile */
 
 @media (max-width: 600px) {
   html {
-    scroll-padding-top: 135px;
+    scroll-padding-top: 150px;
   }
 
   .wrap {
@@ -927,11 +1010,11 @@ footer p {
     padding: 13px 11px;
   }
 
-  .metric .k {
+  .metric dt {
     font-size: 9px;
   }
 
-  .metric .v {
+  .metric dd {
     font-size: 12px;
   }
 
@@ -948,13 +1031,13 @@ footer p {
     padding-block: 28px;
   }
 
-  .sec-title {
+  .sec-head h2 {
     font-size: 13px;
     letter-spacing: 0.04em;
   }
 
   .project-grid,
-  .research-grid,
+  .two-column,
   .skill-grid {
     grid-template-columns: 1fr;
   }
@@ -994,11 +1077,33 @@ footer p {
   }
 
   .cert-card {
+    gap: 14px;
     padding: 16px;
+  }
+
+  .cert-thumb-link {
+    flex-basis: 100px;
+    width: 100px;
+  }
+
+  .cert-img {
+    height: 72px;
+  }
+
+  .cert-info {
+    flex-basis: 160px;
+  }
+
+  .cert-badge {
+    margin-left: auto;
+  }
+
+  .additional-certs-body {
+    padding: 14px;
   }
 }
 
-/* ---------- REDUCED MOTION ---------- */
+/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -1006,7 +1111,7 @@ footer p {
   }
 }
 
-/* ---------- PRINT ---------- */
+/* Print */
 
 @media print {
   :root {
@@ -1039,7 +1144,8 @@ footer p {
   .site-header,
   .skip-link,
   .hero .links,
-  .footer-links {
+  .footer-links,
+  .additional-certs {
     display: none;
   }
 
@@ -1058,9 +1164,9 @@ footer p {
   }
 
   .status-bar {
+    border-bottom: 1px solid #cccccc;
     background: #ffffff;
     color: #111111;
-    border-bottom: 1px solid #cccccc;
   }
 
   .dot {
@@ -1087,14 +1193,14 @@ footer p {
   }
 
   .project-grid,
-  .research-grid,
+  .two-column,
   .skill-grid {
     grid-template-columns: 1fr;
   }
 
   .research-card {
-    background: #ffffff;
     border: 1px solid #cccccc;
+    background: #ffffff;
   }
 
   .research-card p,
@@ -1108,6 +1214,15 @@ footer p {
 
   .table-wrap {
     overflow: visible;
+  }
+
+  .cert-thumb-link {
+    flex-basis: 90px;
+    width: 90px;
+  }
+
+  .cert-img {
+    height: 64px;
   }
 
   footer {
