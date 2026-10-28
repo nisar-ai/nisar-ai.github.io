@@ -1,280 +1,812 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nisar Ahmad — Computer Science</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nisar Ahmad | Computer Systems Research Portfolio</title>
+
+  <meta
+    name="description"
+    content="Nisar Ahmad — Computer Science undergraduate interested in computer networks, operating systems, cloud computing, and distributed systems. Explore systems projects, simulation results, and academic background."
+  >
+  <meta name="author" content="Nisar Ahmad">
+  <meta name="theme-color" content="#10231f">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nisar Ahmad | Computer Systems Portfolio">
+  <meta
+    property="og:description"
+    content="Systems-oriented undergraduate portfolio: discrete-event simulation, microservice queueing, tail latency, and token-bucket rate limiting."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<div class="wrap">
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="brand" href="#top">Nisar Ahmad<span aria-hidden="true">_</span></a>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="status-panel">
-      <div class="status-bar">
-        <span class="dot"></span>
-        <span>system status: active — 3rd semester in progress</span>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#research">Research interests</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </div>
-      <div class="status-body">
-        <div class="eyebrow">BS Computer Science · COMSATS University Islamabad</div>
-        <h1>Nisar Ahmad</h1>
-        <div class="role">Building toward computer systems research — cloud, distributed systems, databases.</div>
-
-        <div class="metric-row">
-          <div class="metric">
-            <div class="k">CGPA</div>
-            <div class="v">3.50 / 4.00</div>
-          </div>
-          <div class="metric">
-            <div class="k">Semester</div>
-            <div class="v">3rd — Sep 2026</div>
-          </div>
-          <div class="metric">
-            <div class="k">Focus</div>
-            <div class="v">Computer Systems</div>
-          </div>
-          <div class="metric">
-            <div class="k">Learning</div>
-            <div class="v">C++ / DSA</div>
-          </div>
-        </div>
-
-        <div class="links">
-          <a href="https://github.com/nisar-ai" target="_blank" rel="noopener">↗ github.com/nisar-ai</a>
-          <a href="https://www.linkedin.com/in/nisar-ahmad-973a673a2/" target="_blank" rel="noopener">↗ LinkedIn</a>
-          <a href="mailto:fa25-bcs-092@students.cuisahiwal.edu.pk">✉ fa25-bcs-092@students.cuisahiwal.edu.pk</a>
-        </div>
-      </div>
-    </div>
+    </nav>
   </header>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="sec-head"><span class="sec-num">01</span><span class="sec-title">About</span></div>
-    <p class="about-text">
-      I'm a Computer Science student at COMSATS University Islamabad Sahiwal Campus, currently in my 3rd semester.
-      My coursework — <strong>Data Structures (C++)</strong>, <strong>Database Systems (Oracle)</strong>,
-      and <strong>Digital Logic Design</strong> — has pulled me toward how computing systems actually work
-      under the hood: how data is stored efficiently, how machines talk to each other, and how software
-      scales. Alongside my degree, I build small applied projects and am self-taught in web fundamentals
-      through freeCodeCamp.
-    </p>
-  </section>
+  <main id="main" class="wrap">
 
-  <!-- EDUCATION -->
-  <section id="education">
-    <div class="sec-head"><span class="sec-num">02</span><span class="sec-title">Education</span></div>
-    <div class="edu-card">
-      <div class="edu-top">
-        <div class="edu-uni">COMSATS University Islamabad, Sahiwal Campus</div>
-        <div class="edu-date">Sept 2025 — Present</div>
-      </div>
-      <div class="edu-degree">Bachelor of Science in Computer Science (BS CS)</div>
-      <div class="gpa-row">
-        <span class="gpa-badge">CGPA 3.50 / 4.00</span>
-        <span>Sem 1: 3.71 &nbsp;·&nbsp; Sem 2: 3.31</span>
-      </div>
-      <div class="coursework">
-        <b>Coursework:</b> Data Structures &amp; Algorithms (C++), Object-Oriented Programming (Java),
-        Database Systems (Oracle SQL), Discrete Structures, Digital Logic Design, Software Engineering.
-      </div>
-    </div>
-  </section>
+    <!-- HERO -->
+    <div id="top" class="hero">
+      <div class="status-panel">
+        <div class="status-bar">
+          <span class="dot" aria-hidden="true"></span>
+          <span>BS Computer Science · Semester 3 · Fall 2026</span>
+        </div>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="sec-head"><span class="sec-num">03</span><span class="sec-title">Technical Skills</span></div>
-    <div class="skill-grid">
-      <div class="skill-card">
-        <div class="cat">Languages</div>
-        <div class="chip-row">
-          <span class="chip">Java</span>
-          <span class="chip learning">C++</span>
-          <span class="chip">SQL (Oracle)</span>
-          <span class="chip">HTML5</span>
-          <span class="chip">CSS3</span>
+        <div class="status-body">
+          <p class="eyebrow">
+            COMSATS University Islamabad · Sahiwal Campus
+          </p>
+
+          <h1>Nisar Ahmad</h1>
+
+          <p class="role">
+            Building toward computer systems research —
+            networks, operating systems, and cloud infrastructure.
+          </p>
+
+          <p class="hero-description">
+            I build systems-oriented software to explore queueing,
+            request admission, retry behaviour, and tail latency.
+            My current work emphasises reproducible simulation,
+            performance evaluation, and clear implementation.
+          </p>
+
+          <p class="availability">
+            Seeking a summer 2027 undergraduate research internship
+            in computer systems.
+          </p>
+
+          <dl class="metric-row">
+            <div class="metric">
+              <dt class="k">CGPA</dt>
+              <dd class="v">3.50 / 4.00</dd>
+            </div>
+
+            <div class="metric">
+              <dt class="k">Academic standing</dt>
+              <dd class="v">Top five / 50</dd>
+            </div>
+
+            <div class="metric">
+              <dt class="k">Current study</dt>
+              <dd class="v">Semester 3</dd>
+            </div>
+
+            <div class="metric">
+              <dt class="k">Graduation</dt>
+              <dd class="v">July 2029*</dd>
+            </div>
+          </dl>
+
+          <p class="metric-note">*Expected graduation.</p>
+
+          <div class="links">
+            <!-- Place the CV PDF beside index.html. -->
+            <a class="primary-link" href="Nisar_Ahmad_CV.pdf">
+              View CV (PDF)
+            </a>
+
+            <a
+              href="https://github.com/nisar-ai"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub ↗
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/nisar-ahmad-973a673a2/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn ↗
+            </a>
+
+            <a href="mailto:iamnisarahmad08@gmail.com">
+              Email
+            </a>
+          </div>
         </div>
       </div>
-      <div class="skill-card">
-        <div class="cat">Tools &amp; Platforms</div>
-        <div class="chip-row">
-          <span class="chip">Git</span>
-          <span class="chip">GitHub</span>
-          <span class="chip">VS Code</span>
-          <span class="chip">Linux CLI</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="cat">Core Concepts</div>
-        <div class="chip-row">
-          <span class="chip">Algorithm Design</span>
-          <span class="chip">OOP</span>
-          <span class="chip">Relational DB Design</span>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="cat">Currently Learning</div>
-        <div class="chip-row">
-          <span class="chip learning">Pointers &amp; Memory (C++)</span>
-          <span class="chip learning">Data Structures</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="sec-head"><span class="sec-num">04</span><span class="sec-title">Projects</span></div>
-    <div class="project-grid">
-
-      <div class="project-card">
-        <div class="project-top">
-          <h3>Weather Forecast Bot</h3>
-          <a href="https://github.com/nisar-ai/weather-forecast-bot" target="_blank" rel="noopener" class="proj-link">Code ↗</a>
-        </div>
-        <p class="proj-desc">A simple bot that provides weather forecasts for any location using the OpenWeatherMap API.</p>
-        <div class="chip-row"><span class="chip">Python</span><span class="chip">Discord.py</span><span class="chip">OpenWeatherMap API</span></div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-top">
-          <h3>Scientific Calculator</h3>
-          <a href="https://github.com/nisar-ai/scientific-calculator" target="_blank" rel="noopener" class="proj-link">Code ↗</a>
-        </div>
-        <p class="proj-desc">A scientific calculator that supports advanced mathematical operations.</p>
-        <div class="chip-row"><span class="chip">Python</span><span class="chip">Tkinter</span></div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-top">
-          <h3>Trilingual Translator</h3>
-          <a href="https://github.com/nisar-ai/trilingual-translator" target="_blank" rel="noopener" class="proj-link">Code ↗</a>
-        </div>
-        <p class="proj-desc">A translator that supports three languages, utilizing machine learning for accurate translations.</p>
-        <div class="chip-row"><span class="chip">Python</span><span class="chip">TensorFlow</span><span class="chip">Google Translate API </span></div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-top">
-          <h3>University FAQ Bot</h3>
-          <a href="https://github.com/nisar-ai/university-faq-bot" target="_blank" rel="noopener" class="proj-link">Code ↗</a>
-        </div>
-        <p class="proj-desc">A bot that answers frequently asked questions about the university, built with Python and a knowledge base.</p>
-        <div class="chip-row"><span class="chip">Python</span><span class="chip">ChatterBot</span><span class="chip">SQLite</span></div>
-      </div>
-
-    </div>
-    <div class="project-placeholder">
-      <div class="pin">◇ in progress</div>
-      <h3>Data Structures Visualizer</h3>
-      <p>A growing project explaining data structures visually, built alongside this semester's Data Structures course. Coming soon.</p>
-    </div>
-  </section>
-
-  <!-- CERTIFICATIONS -->
-  <section id="certifications">
-    <div class="sec-head"><span class="sec-num">05</span><span class="sec-title">Certifications</span></div>
-
-    <div class="cert-card featured">
-      <a href="#" target="_blank" rel="noopener" class="cert-thumb-link">
-        <img src="certs/genai-cohort-3.png" alt="Generative AI Application Development Cohort 3 certificate" class="cert-img">
-      </a>
-      <div class="cert-info">
-        <div class="cert-name">Generative AI Application Development — Cohort 3</div>
-        <div class="cert-meta">2026</div>
-      </div>
-      <a class="cert-badge" href="https://quiz.ideagist.com/ideagist-certificate?cert_hash=7d909dd1f051ca5d" target="_blank" rel="noopener">Verify ↗</a>
     </div>
 
-    <div class="cert-card featured">
-      <a href="#" target="_blank" rel="noopener" class="cert-thumb-link">
-        <img src="certs/genai-cohort-2.png" alt="Generative AI Application Development Cohort 2 certificate" class="cert-img">
-      </a>
-      <div class="cert-info">
-        <div class="cert-name">Generative AI Application Development — Cohort 2</div>
-        <div class="cert-meta">2026</div>
+    <!-- SYSTEMS PROJECTS -->
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="sec-head">
+        <span class="sec-num" aria-hidden="true">01</span>
+        <h2 id="projects-title" class="sec-title">Selected Systems Projects</h2>
       </div>
-      <a class="cert-badge" href="https://quiz.ideagist.com/ideagist-certificate?cert_hash=2e8f9cd6d0e081cd" target="_blank" rel="noopener">Verify ↗</a>
-    </div>
 
-    <div class="cert-card featured">
-      <a href="#" target="_blank" rel="noopener" class="cert-thumb-link">
-        <img src="certs/fcc-responsive-web-design.png" alt="Responsive Web Design certificate" class="cert-img">
-      </a>
-      <div class="cert-info">
-        <div class="cert-name">Responsive Web Design</div>
-        <div class="cert-meta">freeCodeCamp · 2026</div>
-      </div>
-      <a class="cert-badge" href="https://freecodecamp.org/certification/fcc-9dc8839b-3753-4b39-89c5-600d4ed9174a/responsive-web-design" target="_blank" rel="noopener">Verify ↗</a>
-    </div>
-
-    <div class="cert-card minor">
-      <a href="#" target="_blank" rel="noopener" class="cert-thumb-link">
-        <img src="certs/seo.png" alt="Search Engine Optimization certificate" class="cert-img">
-      </a>
-      <div class="cert-info">
-        <div class="cert-name">Search Engine Optimization (SEO)</div>
-        <div class="cert-meta">2026</div>
-      </div>
-      <a class="cert-badge" href="https://digiskills.pk/verify" target="_blank" rel="noopener">Verify ↗</a>
-    </div>
-
-    <div class="cert-card minor">
-      <a href="#" target="_blank" rel="noopener" class="cert-thumb-link">
-        <img src="certs/virtual-assistant.png" alt="Virtual Assistant certificate" class="cert-img">
-      </a>
-      <div class="cert-info">
-        <div class="cert-name">Virtual Assistant</div>
-        <div class="cert-meta">2026</div>
-      </div>
-      <a class="cert-badge" href="https://digiskills.pk/verify" target="_blank" rel="noopener">Verify ↗</a>
-    </div>
-
-    <div class="cert-placeholder">
-    </div>
-  </section>
-
-  <!-- RESEARCH INTEREST -->
-  <section id="research">
-    <div class="sec-head"><span class="sec-num">06</span><span class="sec-title">Research Interest</span></div>
-    <div class="research-card">
-      <p>
-        Exploring computer systems — cloud computing, distributed systems, and database internals —
-        inspired by coursework in Database Systems and Digital Logic Design. Interested in how systems
-        stay efficient and reliable at scale, and working toward research experience in this area.
+      <p class="section-intro">
+        Independent projects investigating workload, service capacity,
+        request throttling, and latency. These are experimental
+        learning tools, not production infrastructure.
       </p>
-      <div class="research-tags">
-        <span>Cloud Computing</span>
-        <span>Distributed Systems</span>
-        <span>Databases</span>
-        <span>Networks</span>
+
+      <article class="project-card featured-project">
+        <p class="project-category">
+          Discrete-event simulation · Microservices · Performance analysis
+        </p>
+
+        <div class="project-top">
+          <h3>CloudTrace Lab</h3>
+
+          <a
+            href="https://github.com/nisar-ai/cloudtrace-lab"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="proj-link"
+          >
+            Source code ↗
+          </a>
+        </div>
+
+        <p class="project-subtitle">
+          Configurable microservice simulator
+        </p>
+
+        <p class="proj-desc">
+          Designed and implemented a discrete-event simulator to study
+          how request arrivals, finite service capacity, queueing,
+          simulated failures, and retries affect end-to-end latency.
+        </p>
+
+        <ul class="detail-list">
+          <li>
+            Modelled a microservice pipeline with finite-capacity
+            services and retries using exponential backoff with jitter.
+          </li>
+          <li>
+            Built seeded experiments and request- and service-level
+            CSV trace exports for repeatable runs and detailed analysis.
+          </li>
+          <li>
+            Analysed mean and p50/p95/p99 latency, success rate,
+            utilisation, queue wait, and bottlenecks.
+          </li>
+          <li>
+            Created an interactive interface and visualisations
+            for exploring workload and capacity settings.
+          </li>
+        </ul>
+
+        <div class="result-panel">
+          <h4>Reported simulation result</h4>
+
+          <p class="result-context">
+            Example run documented in my CV: 300 simulated requests.
+            Latency values represent simulated request time.
+          </p>
+
+          <div
+            class="table-wrap"
+            role="region"
+            aria-label="CloudTrace Lab reported simulation results"
+            tabindex="0"
+          >
+            <table>
+              <caption>
+                Single-run outputs; not a comparative benchmark.
+              </caption>
+
+              <thead>
+                <tr>
+                  <th scope="col">Metric</th>
+                  <th scope="col">Reported value</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <th scope="row">Successful requests</th>
+                  <td>298 / 300 (99.3%)</td>
+                </tr>
+                <tr>
+                  <th scope="row">p50 latency</th>
+                  <td>3.32 s</td>
+                </tr>
+                <tr>
+                  <th scope="row">p95 latency</th>
+                  <td>6.05 s</td>
+                </tr>
+                <tr>
+                  <th scope="row">p99 latency</th>
+                  <td>6.26 s</td>
+                </tr>
+                <tr>
+                  <th scope="row">Requests requiring multiple attempts</th>
+                  <td>24</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="scope-note">
+            These outputs illustrate behaviour within the simulation
+            model. They do not demonstrate a performance improvement
+            over a baseline or measurements from a real cloud deployment.
+          </p>
+
+          <!--
+            Add a benchmark-artifact link only after publishing
+            the exact configuration, random seed, code commit,
+            metric definitions, and exported traces for this run.
+          -->
+        </div>
+
+        <div class="chip-row" aria-label="CloudTrace Lab technologies">
+          <span class="chip">Python</span>
+          <span class="chip">Gradio</span>
+          <span class="chip">NumPy</span>
+          <span class="chip">Pandas</span>
+          <span class="chip">Plotly</span>
+          <span class="chip">Hugging Face Spaces</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <p class="project-category">
+          Request admission · Serverless APIs · Traffic simulation
+        </p>
+
+        <div class="project-top">
+          <h3>Token Bucket Rate Limiter</h3>
+        </div>
+
+        <p class="project-subtitle">Live traffic simulator</p>
+
+        <p class="proj-desc">
+          Implemented a serverless token-bucket rate-limiting API
+          to explore token refill, burst handling, and request throttling.
+        </p>
+
+        <ul class="detail-list">
+          <li>
+            Implemented token refill, admission decisions,
+            burst handling, and HTTP 429 responses.
+          </li>
+          <li>
+            Built a live traffic simulator with throttling
+            visualisation and timestamped event logs.
+          </li>
+          <li>
+            Deployed using Netlify Functions and Git-based
+            continuous deployment.
+          </li>
+        </ul>
+
+        <p class="scope-note standalone-note">
+          Scope: a rate-limiting demonstration, not a claim of
+          globally consistent enforcement across serverless instances.
+        </p>
+
+        <div class="chip-row">
+          <span class="chip">JavaScript</span>
+          <span class="chip">Netlify Functions</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">HTTP 429</span>
+          <span class="chip">Serverless</span>
+        </div>
+
+        <!-- Add confirmed repository and live-demo URLs here. -->
+      </article>
+    </section>
+
+    <!-- RESEARCH INTERESTS -->
+    <section id="research" aria-labelledby="research-title">
+      <div class="sec-head">
+        <span class="sec-num" aria-hidden="true">02</span>
+        <h2 id="research-title" class="sec-title">Research Interests</h2>
       </div>
-    </div>
-  </section>
 
-  <!-- HONORS -->
-  <section id="honors">
-    <div class="sec-head"><span class="sec-num">07</span><span class="sec-title">Honors &amp; Activities</span></div>
-    <ul class="honor-list">
-      <li><span class="tick">✓</span> Self-directed learner — completed freeCodeCamp's Responsive Web Design curriculum independently.</li>
-      <li><span class="tick">✓</span> Built 4 applied mini-projects (weather bot, calculator, translator, FAQ bot) outside coursework.</li>
-    </ul>
-  </section>
+      <div class="research-card">
+        <p>
+          I am interested in how computing systems remain efficient
+          and reliable under load. My current projects explore
+          queueing, finite capacity, retries, and request admission.
+          I want to extend this foundation through supervised
+          research in networks, operating systems, and cloud systems.
+        </p>
 
-  <footer>
-    <p>Last updated · 2026</p>
+        <div class="research-tags">
+          <span>Computer Networks</span>
+          <span>Operating Systems</span>
+          <span>Cloud Computing</span>
+          <span>Distributed Systems</span>
+          <span>Performance Evaluation</span>
+        </div>
+      </div>
+
+      <div class="research-grid">
+        <article class="info-card">
+          <h3>Questions I want to investigate</h3>
+
+          <ul class="detail-list">
+            <li>
+              How do arrival patterns and finite service capacity
+              affect queueing delay and p99 latency?
+            </li>
+            <li>
+              When do retries increase load without meaningfully
+              improving request success?
+            </li>
+            <li>
+              How do rate-limit settings balance burst tolerance,
+              request rejection, and downstream load?
+            </li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h3>Current foundation</h3>
+
+          <p>
+            My experience is based on coursework and independent
+            implementation projects. I am developing my C++,
+            data-structures, and database foundations, with
+            Computer Networks planned for Spring 2027.
+          </p>
+
+          <p>
+            I am seeking research mentorship to learn stronger
+            experimental methods and systems implementation.
+            Operating systems is an interest, not a claim of
+            existing kernel-development experience.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" aria-labelledby="education-title">
+      <div class="sec-head">
+        <span class="sec-num" aria-hidden="true">03</span>
+        <h2 id="education-title" class="sec-title">Education</h2>
+      </div>
+
+      <article class="edu-card">
+        <div class="edu-top">
+          <h3 class="edu-uni">
+            COMSATS University Islamabad, Sahiwal Campus
+          </h3>
+
+          <p class="edu-date">
+            September 2025 – July 2029 (expected)
+          </p>
+        </div>
+
+        <p class="edu-degree">
+          Bachelor of Science in Computer Science
+        </p>
+
+        <div class="gpa-row">
+          <span class="gpa-badge">CGPA 3.50 / 4.00</span>
+          <span>Top five in a class of 50</span>
+        </div>
+
+        <div class="course-grid">
+          <div class="coursework">
+            <h4>Completed</h4>
+            <ul>
+              <li>Programming Fundamentals</li>
+              <li>Object Oriented Programming — Java</li>
+              <li>Discrete Structures</li>
+            </ul>
+          </div>
+
+          <div class="coursework">
+            <h4>In progress · Fall 2026</h4>
+            <ul>
+              <li>Data Structures — C++</li>
+              <li>Database Systems — Oracle SQL</li>
+              <li>Fundamentals of Digital Logic Design</li>
+            </ul>
+          </div>
+
+          <div class="coursework">
+            <h4>Planned · Spring 2027</h4>
+            <ul>
+              <li>Computer Networks</li>
+              <li>Artificial Intelligence</li>
+              <li>Information Security</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="sec-head">
+        <span class="sec-num" aria-hidden="true">04</span>
+        <h2 id="skills-title" class="sec-title">Technical Skills</h2>
+      </div>
+
+      <p class="section-intro">
+        Technologies and concepts used in coursework and independent
+        projects; not a claim of production-scale expertise.
+      </p>
+
+      <div class="skill-grid">
+        <article class="skill-card">
+          <h3 class="cat">Programming</h3>
+
+          <div class="chip-row">
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip learning">C++ — coursework</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">SQL — Oracle</span>
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <h3 class="cat">Systems &amp; Evaluation</h3>
+
+          <div class="chip-row">
+            <span class="chip">Discrete-event simulation</span>
+            <span class="chip">Queueing</span>
+            <span class="chip">Capacity modelling</span>
+            <span class="chip">Microservices</span>
+            <span class="chip">Rate limiting</span>
+            <span class="chip">Backoff &amp; jitter</span>
+            <span class="chip">p50 / p95 / p99</span>
+            <span class="chip">REST APIs</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <h3 class="cat">Frameworks &amp; Analysis Tools</h3>
+
+          <div class="chip-row">
+            <span class="chip">NumPy</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">Plotly</span>
+            <span class="chip">Gradio</span>
+            <span class="chip">Streamlit</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">React</span>
+            <span class="chip">Tailwind CSS</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">Transformers</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <h3 class="cat">Development &amp; Deployment</h3>
+
+          <div class="chip-row">
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Netlify</span>
+            <span class="chip">Netlify Functions</span>
+            <span class="chip">Hugging Face Spaces</span>
+            <span class="chip">Continuous deployment</span>
+            <span class="chip">Environment variables</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" aria-labelledby="experience-title">
+      <div class="sec-head">
+        <span class="sec-num" aria-hidden="true">05</span>
+        <h2 id="experience-title" class="sec-title">Independent Development</h2>
+      </div>
+
+      <article class="info-card">
+        <div class="edu-top">
+          <h3>Independent Software &amp; Cloud Systems Developer</h3>
+          <p class="edu-date">February 2026 – Present</p>
+        </div>
+
+        <p class="muted small-text">
+          Self-directed projects · Not institutional employment
+        </p>
+
+        <ul class="detail-list">
+          <li>
+            Developed and deployed applications on Netlify and
+            Hugging Face Spaces, spanning frontends, serverless
+            backends, and third-party API integrations.
+          </li>
+          <li>
+            Studied queueing, rate limiting, retries, and tail
+            latency through implementation and simulation.
+          </li>
+          <li>
+            Used Git/GitHub for version control and reviewed
+            AI-assisted code against expected behaviour.
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ADDITIONAL PROJECTS -->
+    <section id="additional-projects" aria-labelledby="additional-title">
+      <div class="sec-head">
+        <span class="sec-num" aria-hidden="true">06</span>
+        <h2 id="additional-title" class="sec-title">Additional Software Projects</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>UniBot Next</h3>
+
+          <p class="proj-desc">
+            AI-assisted university admissions chatbot with
+            server-side API handling and environment-variable
+            secret management.
+          </p>
+
+          <div class="chip-row">
+            <span class="chip">Next.js</span>
+            <span class="chip">React</span>
+            <span class="chip">Tailwind CSS</span>
+            <span class="chip">Groq API</span>
+            <span class="chip">Netlify</span>
+          </div>
+        </article>
+
+        <article class="project-card in-progress">
+          <p class="progress-label">In progress · Running locally</p>
+
+          <h3>GlobalVisa Flow</h3>
+
+          <p class="proj-desc">
+            Multilingual visa-planning application with document
+            checklists and cost/timeline estimates. Currently
+            running on localhost for development and testing;
+            preparation for public live deployment is ongoing.
+          </p>
+
+          <div class="chip-row">
+            <span class="chip">Next.js</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip learning">Live deployment pending</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Multilingual Translator</h3>
+
+          <p class="proj-desc">
+            Translation application for English, Urdu, Arabic,
+            and German using a pretrained NLLB-200 model.
+            A model-integration project, not a model trained
+            from scratch.
+          </p>
+
+          <div class="chip-row">
+            <span class="chip">Python</span>
+            <span class="chip">Streamlit</span>
+            <span class="chip">NLLB-200</span>
+            <span class="chip">Hugging Face Spaces</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>NovaCalc</h3>
+
+          <p class="proj-desc">
+            Scientific calculator with a controlled expression
+            evaluator for mathematical operations.
+          </p>
+
+          <div class="chip-row">
+            <span class="chip">Scientific computing</span>
+            <span class="chip">Expression evaluation</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Weather Forecast App</h3>
+
+          <p class="proj-desc">
+            Weather application displaying current conditions
+            and forecast information through public weather APIs.
+          </p>
+
+          <div class="chip-row">
+            <span class="chip">API integration</span>
+            <span class="chip">Weather data</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="honors" aria-labelledby="honors-title">
+      <div class="sec-head">
+        <span class="sec-num" aria-hidden="true">07</span>
+        <h2 id="honors-title" class="sec-title">Honors &amp; Activities</h2>
+      </div>
+
+      <ul class="honor-list">
+        <li>
+          <span class="tick" aria-hidden="true">✓</span>
+          <span>
+            Top-five performer in a class of 50 students,
+            COMSATS University Islamabad, Sahiwal Campus.
+          </span>
+        </li>
+
+        <li>
+          <span class="tick" aria-hidden="true">✓</span>
+          <span>Awardee, Chief Minister’s Laptop Scheme.</span>
+        </li>
+
+        <li>
+          <span class="tick" aria-hidden="true">↗</span>
+          <span>
+            Aspire Leadership Programme — enrolled for
+            October 21 – December 1, 2026; currently ongoing.
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" aria-labelledby="certifications-title">
+      <div class="sec-head">
+        <span class="sec-num" aria-hidden="true">08</span>
+        <h2 id="certifications-title" class="sec-title">Certifications</h2>
+      </div>
+
+      <article class="cert-card featured">
+        <div class="cert-info">
+          <h3 class="cert-name">
+            Generative &amp; Agentic AI Application Developer
+          </h3>
+          <p class="cert-meta">
+            Pak Angels · Cohort 11 · August–October 2026
+          </p>
+        </div>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-info">
+          <h3 class="cert-name">
+            Generative AI Application Development — Cohort 3
+          </h3>
+          <p class="cert-meta">2026</p>
+        </div>
+
+        <a
+          class="cert-badge"
+          href="https://quiz.ideagist.com/ideagist-certificate?cert_hash=7d909dd1f051ca5d"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Verify ↗
+        </a>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-info">
+          <h3 class="cert-name">
+            Generative AI Application Development — Cohort 2
+          </h3>
+          <p class="cert-meta">2026</p>
+        </div>
+
+        <a
+          class="cert-badge"
+          href="https://quiz.ideagist.com/ideagist-certificate?cert_hash=2e8f9cd6d0e081cd"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Verify ↗
+        </a>
+      </article>
+
+      <article class="cert-card">
+        <div class="cert-info">
+          <h3 class="cert-name">Responsive Web Design</h3>
+          <p class="cert-meta">freeCodeCamp · 2026</p>
+        </div>
+
+        <a
+          class="cert-badge"
+          href="https://freecodecamp.org/certification/fcc-9dc8839b-3753-4b39-89c5-600d4ed9174a/responsive-web-design"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Verify ↗
+        </a>
+      </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="sec-head">
+        <span class="sec-num" aria-hidden="true">09</span>
+        <h2 id="contact-title" class="sec-title">Contact</h2>
+      </div>
+
+      <div class="contact-card">
+        <div>
+          <h3>Research internship enquiries</h3>
+
+          <p>
+            Interested in contributing to a supervised computer
+            systems research project in summer 2027.
+          </p>
+
+          <p class="small-text muted">
+            Academic reference details are included in my CV.
+          </p>
+        </div>
+
+        <address>
+          <a href="mailto:iamnisarahmad08@gmail.com">
+            iamnisarahmad08@gmail.com
+          </a>
+
+          <a href="mailto:fa25-bcs-092@students.cuisahiwal.edu.pk">
+            fa25-bcs-092@students.cuisahiwal.edu.pk
+          </a>
+
+          <span>Punjab, Pakistan</span>
+        </address>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="wrap">
+    <p>
+      © 2026 Nisar Ahmad · Last updated October 28, 2026
+    </p>
+
     <div class="footer-links">
-      <a href="https://github.com/nisar-ai" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/nisar-ahmad-973a673a2/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:fa25-bcs-092@students.cuisahiwal.edu.pk">Email</a>
+      <a
+        href="https://github.com/nisar-ai"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/nisar-ahmad-973a673a2/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+
+      <a href="#top">Back to top ↑</a>
     </div>
   </footer>
-
-</div>
-
 </body>
 </html>
